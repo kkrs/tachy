@@ -2,14 +2,17 @@
     flex-basis: 100%;
 }
 
+/* position absolutely with .nav hidden underneath .list */
 .nav {
     position: absolute;
     top: 0px;
     left: 0px;
     opacity: 0;
+    z-index: -1;
 
-    min-width: 16em;
-    max-width: 85%;
+    min-width: 16em; /* is min-width enough for the content ? */
+    width: 80%;
+    /* max-width: 85%; */
     height: 100%;
 }
 
@@ -19,12 +22,18 @@
 
 .list {
     flex-basis: 100%;
-    max-width: auto;
-    min-width: auto;
 }
 
+/* position absolutely with .detail hidden underneath .list */
 .detail {
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    opacity: 0;
+    z-index: -1;
 
+    width: 100%;
+    height: 100%;
 }
 
 @media (--breakpoint-not-small) {
@@ -35,6 +44,13 @@
     }
 
     .detail-ns {
+        /* override positioning and make visible */
+        position: static; 
+        opacity: 1;
+        z-index: 0;
+
+        /* width, height already set correctly. width needs to be 100% to occupy all the remaining
+         * width from .list-ns which has an absolute max-width set */
         width: 100%;
     }
 }
@@ -43,9 +59,11 @@
 }
 
 @media (--breakpoint-large) {
+    /* override positioning and make visible */
     .nav-l {
         position: static;
         opacity: 1;
+        z-index: 0;
 
         flex-basis: 16.6667%;
         min-width: 12em;
