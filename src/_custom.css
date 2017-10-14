@@ -8,11 +8,13 @@
     left: 0px;
     opacity: 0;
 
+    min-width: 16em;
     max-width: 85%;
+    height: 100%;
 }
 
 .content {
-    flex-basis: 100%;
+    width: 100%;
 }
 
 .list {
@@ -26,14 +28,14 @@
 }
 
 @media (--breakpoint-not-small) {
-    .list {
+    .list-ns {
         flex-basis: 33.3333%;
-        min-width: 16em;
+        min-width: 18em;
         max-width: 22em;
     }
 
-    .detail {
-        flex-basis: 66.6667%;
+    .detail-ns {
+        width: 100%;
     }
 }
 
