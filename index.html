@@ -9,14 +9,27 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="stylesheet" href="/css/tachyons.css">
   </head>
-  <body class="min-vh-100 flex">
+  <body class="min-vh-100 flex near-black fw3 lato">
     <main class="flex flex-auto nav-hidden">
-      <nav class="nav nav-l flex flex-auto flex-column bg-light-yellow br b--black-10">
+      <nav id="nav" class="nav nav-l flex flex-column flex-auto bg-light-yellow br b--black-10">
+        <div class="h3 flex items-center justify-center bb b--black-20">
+          <span class="f3 fw7 oswald tracked-tight navy">tachyons</span>
+        </div>
+        <div class="f5 pt3 flex flex-column flex-auto">
+          <div class="pv2 ph2 hoh">
+            <span class="pointer">Inbox</span>
+          </div>
+          <div class="pv2 ph2 hoh"><span class="pointer">Junk Email</span></div>
+          <div class="pv2 ph2 hoh"><span class="pointer">Drafts</span></div>
+          <div class="pv2 ph2 hoh"><span class="pointer">Sent Items</span></div>
+        </div>
       </nav>
       <div class="content content-l flex flex-auto">
         <div class="list list-ns bg-light-green br b--black-10">
+          <div class="h3 bb b--black-20"></div>
         </div>
         <div class="detail detail-ns bg-light-blue">
+          <div class="h3 bb b--black-20"></div>
         </div>
       </div>
     </main>
