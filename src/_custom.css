@@ -1,23 +1,54 @@
+/**
+ * .dosis {
+ *  @import url('https://fonts.googleapis.com/css?family=Dosis');
+ *  font-family: 'Dosis', sans-serif;
+ * }
+ *
+ * }
+ * .raleway {
+ *  @import url('https://fonts.googleapis.com/css?family=Playfair+Display');
+ *  font-family: 'Raleway', sans-serif;
+ * }
+ *
+ * Playfair/Lato
+ */
+
+
+/**
+ * small
+ */
 .fb-100 {
     flex-basis: 100%;
 }
 
-/* position absolutely with .nav hidden underneath .list */
+/* position absolutely */
 .nav {
     position: absolute;
     top: 0px;
     left: 0px;
-    opacity: 0;
-    z-index: -1;
 
     min-width: 16em; /* is min-width enough for the content ? */
     width: 80%;
-    /* max-width: 85%; */
+    /* max-width: 80%; */
     height: 100%;
+}
+
+.nav-hidden > .nav {
+    opacity: 0;
+}
+
+.nav-visible > .nav {
+    opacity: 1;
 }
 
 .content {
     width: 100%;
+    transition: transform 225ms cubic-bezier(.4,0,.2,1);
+}
+
+.nav-visible > .content {
+    transform: translateX(80%);
+    transition: transform 225ms cubic-bezier(.4,0,.2,1);
 }
 
 .list {
@@ -45,12 +76,13 @@
 
     .detail-ns {
         /* override positioning and make visible */
-        position: static; 
+        position: static;
         opacity: 1;
         z-index: 0;
 
-        /* width, height already set correctly. width needs to be 100% to occupy all the remaining
-         * width from .list-ns which has an absolute max-width set */
+        /* width, height already set correctly. width needs to be 100% to occupy
+         * all the remaining width from .list-ns which has an absolute max-width
+         * set */
         width: 100%;
     }
 }
@@ -59,8 +91,8 @@
 }
 
 @media (--breakpoint-large) {
-    /* override positioning and make visible */
-    .nav-l {
+    /* overrides positioning and is always visible */
+    .nav-hidden > .nav-l, .nav-visible > .nav-l, .nav-l {
         position: static;
         opacity: 1;
         z-index: 0;
