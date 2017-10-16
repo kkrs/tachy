@@ -8,28 +8,104 @@
     <meta name="description" content="">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="stylesheet" href="/css/tachyons.css">
+    <link rel="stylesheet" href="/icons/ionicons.css">
   </head>
   <body class="min-vh-100 flex near-black fw3 lato">
     <main class="flex flex-auto nav-hidden">
+    
+      <!-- nav column -->
       <nav id="nav" class="nav nav-l flex flex-column flex-auto bg-light-yellow br b--black-10">
-        <div class="h3 flex items-center justify-center bb b--black-20">
-          <span class="f3 fw7 oswald tracked-tight navy">tachyons</span>
+
+        <!-- header - logo -->
+        <div class="h3 flex items-center justify-center">
+          <span class="f3 fw7 oswald tracked-tight navy" style="font-size: 1.7rem;">tachyons</span>
         </div>
+
+        <!-- nav -->
         <div class="f5 pt3 flex flex-column flex-auto">
-          <div class="pv2 ph2 hoh">
-            <span class="pointer">Inbox</span>
-          </div>
+          <!-- item -->
+          <div class="pv2 ph2 hoh"> <span class="pointer">Inbox</span> </div>
+          <!-- item -->
           <div class="pv2 ph2 hoh"><span class="pointer">Junk Email</span></div>
+          <!-- item -->
           <div class="pv2 ph2 hoh"><span class="pointer">Drafts</span></div>
+          <!-- item -->
           <div class="pv2 ph2 hoh"><span class="pointer">Sent Items</span></div>
         </div>
       </nav>
+
       <div class="content content-l flex flex-auto">
-        <div class="list list-ns bg-light-green br b--black-10">
-          <div class="h3 bb b--black-20"></div>
+        <div class="list list-ns flex flex-column bg-light-green">
+          <!-- column header -->
+          <div class="h3 flex flex-row items-center"> 
+            <span class="ion-ios-search pl3 pt1">
+              <input type="search" class="bg-light-green lato outline-0 bn pl2" placeholder="search">
+            </span>
+          </div>
+
+          <!-- list -->
+          <div class="pt3 flex-flex-column flex-auto">
+            <!-- item -->
+            <div class="h3 pv1 ph2 bl bw1 b--dark-blue hoh flex flex-column flex-auto">
+              <!-- subject -->
+              <div class="flex flex-row flex-auto justify-between">
+                <span class="f4 fw4 truncate self-end w-70">This year's Oktoberfest</span>
+                <span class="f7 self-end">12:26 pm</span>
+              </div>
+
+              <!-- byline -->
+              <div class="mt2 flex flex-row flex-auto justify-between">
+                <span class="f7 truncate-clean self-end w-70">Hubert Wolfeschlegelsteinhausenbergerdorff</span>
+              </div>
+            </div>
+
+            <!-- item -->
+            <div class="h3 pv1 ph2 hoh flex flex-column flex-auto">
+              <!-- subject -->
+              <div class="flex flex-row flex-auto justify-between">
+                <span class="f4 fw3 truncate self-end w-70">Lunch @Phoenix ?</span>
+                <span class="f7 self-end">Wed, Oct 11</span>
+              </div>
+
+              <!-- byline -->
+              <div class="mt2 flex flex-row flex-auto justify-between">
+                <span class="f7 truncate-clean self-end w-70">Syam Puranam</span>
+              </div>
+            </div>
+
+            <!-- item -->
+            <div class="h3 pv1 ph2 hoh flex flex-column flex-auto">
+              <!-- subject -->
+              <div class="flex flex-row flex-auto justify-between">
+                <span class="f4 fw3 truncate self-end w-70">Call us this weekend</span>
+                <span class="f7 self-end">Sun, Oct 8</span>
+              </div>
+
+              <!-- byline -->
+              <div class="mt2 flex flex-row flex-auto justify-between">
+                <span class="f7 truncate-clean self-end w-70">Appa</span>
+              </div>
+            </div>
+          </div>
         </div>
-        <div class="detail detail-ns bg-light-blue">
-          <div class="h3 bb b--black-20"></div>
+
+        <div class="detail detail-ns bg-light-blue flex flex-column flex-auto">
+          <!-- column header -->
+          <div class="h3 flex flex-row items-center">
+          </div>
+
+          <!-- detail -->
+          <div class="pt3 flex flex-row">
+            <!-- header -->
+            <div class="pv1 ph3 flex flex-column flex-auto">
+              <div class="flex flex-row flex-auto justify-between">
+                <span class="f3 self-end w-80">This year's Oktoberfest plans - starts in Berlin, ends in Barcelona</span>
+                <span class="ion-ios-star-outline"></span>
+              </div>
+              <span class="f6 mt2">Hubert Wolfeschlegelsteinhausenber</span>
+            </div>
+          </div>
+
         </div>
       </div>
     </main>

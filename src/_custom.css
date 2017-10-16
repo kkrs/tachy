@@ -32,6 +32,11 @@
     background-color: rgba(0, 0, 0, 0.1);
 }
 
+.truncate-clean {
+    white-space: nowrap;
+    overflow: hidden;
+}
+
 .fb-100 {
     flex-basis: 100%;
 }
