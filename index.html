@@ -8,7 +8,7 @@
     <meta name="description" content="">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="stylesheet" href="/css/tachyons.css">
-    <link rel="stylesheet" href="/icons/ionicons.css">
+    <link rel="stylesheet" href="/css/ionicons.css">
   </head>
   <body class="min-vh-100 flex near-black fw3 lato">
     <main class="flex flex-auto nav-hidden">
@@ -24,13 +24,13 @@
         <!-- nav -->
         <div class="f5 pt3 flex flex-column flex-auto">
           <!-- item -->
-          <div class="pv2 ph2 hoh"> <span class="pointer">Inbox</span> </div>
+          <div class="pv2 ph2 hoh pointer">Inbox</div>
           <!-- item -->
-          <div class="pv2 ph2 hoh"><span class="pointer">Junk Email</span></div>
+          <div class="pv2 ph2 hoh pointer">Junk Email</div>
           <!-- item -->
-          <div class="pv2 ph2 hoh"><span class="pointer">Drafts</span></div>
+          <div class="pv2 ph2 hoh pointer">Drafts</div>
           <!-- item -->
-          <div class="pv2 ph2 hoh"><span class="pointer">Sent Items</span></div>
+          <div class="pv2 ph2 hoh pointer">Sent Items</div>
         </div>
       </nav>
 
@@ -95,12 +95,28 @@
           <!-- column header -->
           <div class="h3 ph3 flex flex-row justify-between">
             <div class="flex items-center">
-              <span class="flex items-center justify-center f3 h2 w2 hoh ion-ios-plus-outline"></span>
+              <div class="flex items-center justify-center h2 w2">
+                <a href="#" class="db hover-dark-gray"><span class="f3 icon ion-ios-add-circle-outline"></span></a>
+              </div>
+              <!--
+              <div class="flex items-center justify-center">
+                <a href="#" class="inline-flex items-center near-black hover-white">
+                  <embed class="dib h2 w2 hover-white" src="/svg/ios-umbrella.svg">
+                </a>
+              </div>
+
+              <div class="flex items-center justify-center">
+                <a class="no-underline near-black hover-bg-gray inline-flex items-center" href="https://facebook.com" title="Facebook">
+                <svg class="dib h2 w2" fill="currentColor" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 16 16" fill-rule="evenodd" clip-rule="evenodd" stroke-linejoin="round" stroke-miterlimit="1.414"><path d="M15.117 0H.883C.395 0 0 .395 0 .883v14.234c0 .488.395.883.883.883h7.663V9.804H6.46V7.39h2.086V5.607c0-2.066 1.262-3.19 3.106-3.19.883 0 1.642.064 1.863.094v2.16h-1.28c-1 0-1.195.476-1.195 1.176v1.54h2.39l-.31 2.416h-2.08V16h4.077c.488 0 .883-.395.883-.883V.883C16 .395 15.605 0 15.117 0" fill-rule="nonzero"/></svg>
+  </a>
+              </div>
+              -->
             </div>
             <div class="flex items-center">
+              <span class="flex items-center justify-center f3 h2 w2 ml1 hoh ion-ios-thumbs-up-outline"></span>
               <span class="flex items-center justify-center f3 h2 w2 ml1 hoh ion-ios-alarm-outline"></span>
-              <span class="flex items-center justify-center f3 h2 w2 ml1 hoh ion-ios-arrow-thin-up"></span>
-              <span class="flex items-center justify-center f3 h2 w2 ml1 hoh ion-ios-checkmark-empty"></span>
+              <span class="flex items-center justify-center f3 h2 w2 ml1 hoh ion-ios-skip-forward-outline"></span>
+              <span class="flex items-center justify-center f3 h2 w2 ml1 hoh ion-ios-done-all-outline"></span>
             </div>
           </div>
 
